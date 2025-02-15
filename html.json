@@ -1,5 +1,5 @@
 {
-  "Custom HTML Boilerplate with Refresh": {
+  "Custom HTML Boilerplate with Additional Properties": {
     "prefix": "html-self",
     "body": [
       "<!DOCTYPE html>",
