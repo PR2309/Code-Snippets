@@ -1,0 +1,41 @@
+{
+	"Custom Java Boilerplate with Standard Packages and Libraries": {
+		"prefix": "java-self",
+		"body": [
+			"import java.util.*;                  // Collections, Scanner, Random, etc.",
+			"import java.io.*;                    // File handling, Input/Output streams",
+			"import java.nio.*;                   // Non-blocking I/O (Buffers, Channels, etc.)",
+			"import java.net.*;                   // Networking (URL, Socket, etc.)",
+			"import java.sql.*;                   // Database Connectivity (JDBC)",
+			"import java.time.*;                  // Date & Time API",
+			"import java.text.*;                  // Formatting (DateFormat, DecimalFormat)",
+			"import java.util.regex.*;            // Regular Expressions (Pattern, Matcher)",
+			"import java.util.concurrent.*;       // Concurrency utilities (Executors, Threads)",
+			"",
+			"// Third-party Libraries (Need to add dependencies manually in Maven/Gradle)",
+			"",
+			"// Logging",
+			"import org.slf4j.*;                  // SLF4J (Common logging facade)",
+			"import org.apache.logging.log4j.*;   // Log4j (Advanced logging)",
+			"",
+			"// JSON Handling",
+			"import com.fasterxml.jackson.databind.*;  // Jackson (Converts JSON to Java objects)",
+			"import com.google.gson.*;                 // Gson (Google's JSON parser)",
+			"",
+			"// HTTP Requests (REST API Calls)",
+			"import org.apache.http.*;   // Apache HttpClient (Robust HTTP client)",
+			"import okhttp3.*;           // OkHttp (Lightweight HTTP client)",
+			"",
+			"// Unit Testing",
+			"import org.junit.*;         // JUnit (For writing test cases)",
+			"import org.mockito.*;       // Mockito (Mocking framework)",
+			"",
+			"public class Main {",
+			"    public static void main(String[] args) {",
+			"        ${1:}",
+			"    }",
+			"}"
+		],
+		"description": "Custom Java Boilerplate with Standard Java Packages and Common Libraries imported"
+	}
+}
