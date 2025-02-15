@@ -1,5 +1,5 @@
 {
-	"Custom C Programmin Boilerplate": {
+	"Custom C Programming Boilerplate with Additional Libraries": {
 		"prefix": "c-self",
 		"body": [
 			"#include <stdio.h>      // Standard I/O functions: printf, scanf, etc.",
@@ -55,6 +55,6 @@
 			"//     return 0;",
 			"// }",
 		],
-		"description": "Custom C Programming Boilerplate with more headers and documentation"
+		"description": "Custom C Programming Boilerplate with more headers libraries included"
 	}
 }
