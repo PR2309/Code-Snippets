@@ -53,7 +53,7 @@
 			"//     */",
 			"//     printf(\"%d\\n%s\\n\", argc, argv[0]);",
 			"//     return 0;",
-			"// }",
+			"// }"
 		],
 		"description": "Custom C Programming Boilerplate with more headers libraries included"
 	}
