@@ -1,0 +1,105 @@
+~> Snippets are predefined code templates that expand into full code when you type a prefix + Tab / Enter.
+~> Can be committed to GitHub under .vscode folder in root folder
+
+
+~> File Extensions:
+    *.code-snippets are global or workspace reusable snippet files, while *.json snippet files are language-specific and apply only to the defined programming language.
+        - *.code-snippets files are global user snippets
+        - *.json files are local user snippets
+
+~> Usage:
+    They are used to:
+        (i) Reduce repetitive typing
+        (ii) Avoid syntax errors
+        (iii) Speed up development
+        (iv) Maintain consistent code style
+
+~> Types/ Levels:
+    VS Code supports three levels of snippets:
+        (i) Global User Snippets (*.code-snippets files):
+            - Works on all languages & projects
+            - Used in all projects
+            - Used in all languages (unless restricted)
+            - Example: (Works in JS, React, Node, anywhere)
+                {
+                    "Print to console": {
+                        "prefix": "cl",
+                        "body": "console.log($1);",
+                        "description": "Log output to console"
+                    }
+                }
+        (ii) Workspace Snippets (.vscode/*.code-snippets files): One project only
+            - Restrict global snippet to a language
+            - Example:
+                {
+                    "React useState": {
+                        "scope": "javascriptreact",
+                        "prefix": "us",
+                        "body": [
+                            "const [$1, set$2] = useState($3);"
+                        ]
+                    }
+                }
+            (iii) Language-specific Snippets	(<language>.json files): One language only
+                - Snippets that work only for one language
+                - File name format: <language>.json
+                - Example:
+                    {
+                        "Arrow Function": {
+                            "prefix": "af",
+                            "body": [
+                                "const $1 = ($2) => {",
+                                    "  $0",
+                                "};"
+                            ],
+                            "description": "Create arrow function"
+                        }
+                    }
+
+~> Storage Paths:
+    They are stored in:
+        - Windows:
+            C:\Users\<username>\AppData\Roaming\Code\User\snippets\
+        - Linux:
+            ~/.config/Code/User/snippets/
+        - macOS:
+            ~/Library/Application Support/Code/User/snippets/
+
+~> Placeholders
+    (i) Cursor positions:           $1, $2	
+    (ii) Final cursor position:     $0
+    (iii) Default value:            ${1:name}
+    (iv) one,two:                   ${1,2}
+
+~> Snippets vs Extensions
+    (Snippets)	            (Extensions)
+    Simple templates	    Full features
+    Lightweight	            Heavier
+    Custom	                Pre-built
+    Fast	                Powerful
+
+~> Order of preference:
+    Local overrides global.
+    Workspace snippets > Language snippets > Global snippets
+
+~> Real-world Example (React Dev)
+    Global snippet → rfc
+    Project snippet → apiCall
+    Language snippet → useEffect
+
+~> Working:
+    How VS Code Knows When to Trigger a Snippet
+    A snippet appears when:
+        1. File language matches scope
+        2. Typed text matches prefix
+        3. Tab or Enter is pressed
+        4. Settings involved:
+            "editor.tabCompletion": "on"
+
+~> To backup vscode snippets:
+    Step 1>
+        Create a folder named "vscode\snippets" if not exsists already
+    Step 2>
+        To copy all .json snipppets of vscode
+        run this command:
+            copy "$env:APPDATA\Code\User\snippets\*" vscode\snippets\

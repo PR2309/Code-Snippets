@@ -1,0 +1,22 @@
+# Ignore everything by default
+*
+
+# --- Allow root-level required files ---
+!.gitignore
+!LICENSE
+!README.md
+
+# --- Allow specific file types anywhere ---
+!**/*.txt
+!**/*.json
+!**/*.code-snippets
+
+# --- Allow VS Code folders ---
+!.vscode/
+!.vscode/**
+
+!vscode/
+!vscode/**
+
+# --- Allow directories needed to reach allowed files ---
+!*/
