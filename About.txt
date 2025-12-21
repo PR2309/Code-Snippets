@@ -1,7 +1,6 @@
 ~> Snippets are predefined code templates that expand into full code when you type a prefix + Tab / Enter.
 ~> Can be committed to GitHub under .vscode folder in root folder
 
-
 ~> File Extensions:
     *.code-snippets are global or workspace reusable snippet files, while *.json snippet files are language-specific and apply only to the defined programming language.
         - *.code-snippets files are global user snippets
@@ -102,4 +101,5 @@
     Step 2>
         To copy all .json snipppets of vscode
         run this command:
+
             copy "$env:APPDATA\Code\User\snippets\*" vscode\snippets\
