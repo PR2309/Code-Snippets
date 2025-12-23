@@ -1,3 +1,6 @@
+~> These are the customized boiler-plate code snippets for some technologies or language.
+~> It is used in VS Code with specific keyword to get a custom boiler-plate code.
+
 ~> Snippets are predefined code templates that expand into full code when you type a prefix + Tab / Enter.
 ~> Can be committed to GitHub under .vscode folder in root folder
 
@@ -103,3 +106,33 @@
         run this command:
 
             copy "$env:APPDATA\Code\User\snippets\*" vscode\snippets\
+
+~> To Set-Up in VS Code:
+    Step 1> 
+        Press: "CTRL + SHIFT + P"
+    Step 2> 
+        Enter: ">Snippets: Configure Snippets"
+    Step 3>
+        Press Enter
+    Step 4>
+        Enter Name of that custom snippet, same as the file for user understanding.
+        <SnippetName>.json
+        Example:  c.json, cpp.json, html.json, csharp.json, etc.
+    Step 5>
+        Copy and Paste the code.
+        Or write own custom snippet taking referrence from comments and these code files.
+    Step 6>
+        Press "Enter" to save it
+    Step 7> (To use it)
+        Enter the value of "prefix" in the code.
+        Then, press "Enter".
+    Step 8>
+        Navigate to change only custom values, using "TAB" - for forward, "SHIFT + TAB" - for backward propagation. 
+
+~> To Rename/Delete it:
+    Copy it's path from vs code.
+    Paste it in address bar at top of file explorer removing the name of file from end.
+    Press enter to move to the folder where these snippets are stored.
+    Delete of Rename them normally as per choice from there.
+    Path is like: "C:\Users\LENOVO\AppData\Roaming\Code\User\snippets\cpp.code-snippets"
+                  Remove"cpp.code-snippets" in address bar of file explorer.
